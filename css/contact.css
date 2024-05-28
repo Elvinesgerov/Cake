@@ -1,0 +1,275 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.header_container {
+    width: 100%;
+    height: 200px;
+    background-color: #540d0d;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    gap: 250px;
+}
+
+.header_title {
+    display: flex;
+    gap: 100px;
+
+}
+
+.header_title a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header_title a:hover {
+    color: rgb(240, 199, 148);
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 10px 15px;
+}
+
+.ri-shopping-cart-2-fill {
+    font-size: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #340606;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(120, 88, 50);
+}
+
+.darkmood {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 6px 10px;
+    display: flex;
+    gap: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.ri-moon-line,
+.ri-sun-line {
+    font-size: 25px;
+}
+
+.generally_scrol{
+    border: 1px solid rgb(121, 40, 52);
+    border-radius: 15px;
+    width: 4%;
+    height: 56px;
+    background-color: rgb(226, 103, 124);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    font-size: 30px;
+    right: 15px;
+    justify-content: center;
+    top: 90%;
+    color: white;
+    display: none;
+}
+
+/* #snow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+    width: 100%;
+    height: 785%;
+}
+
+@keyframes animation{
+    to {
+        transform: translateY(690vh);
+    }
+
+}
+
+.snow{
+    position: absolute;
+    top: -10px;
+    font-size: 1em;
+    user-select: none;
+    animation: animation linear infinite;
+} */
+
+footer {
+    background-color: black;
+    height: 600px;
+    width: 100%;
+}
+
+.footer_a {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.footer_container a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    font-family: Dancing Script, cursive;
+    font-style: italic;
+    font-size: 20px;
+    margin-left: 240px;
+    margin-top: 60px;
+    width: 10%;
+    transition: 0.7s;
+}
+
+.footer_container a:hover {
+    color: rgb(196, 140, 68);
+}
+
+.footer_sheet div {
+    display: flex;
+    margin-bottom: 70px;
+    margin-left: 750px;
+    color: white;
+    font-size: 20px;
+    gap: 40px;
+
+}
+
+.footer_sheet {
+    margin-top: -260px;
+}
+
+.sheet_footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(205, 108, 39);
+    margin-top: 210px;
+}
+
+.sheet_footer hr {
+    width: 70%;
+    margin: 10px auto;
+
+}
+
+.ri-mail-fill {
+    display: flex;
+    color: rgb(237, 192, 134);
+    margin-left: 550px;
+    font-size: 20px;
+    margin-top: -43px;
+}
+
+.sheet_icon {
+    display: flex;
+    justify-content: center;
+    color: rgb(128, 78, 16);
+    font-size: 30px;
+    gap: 125px;
+    margin-top: 20px;
+    transition: 0.7s;
+}
+
+.sheet_icon a:hover {
+    color: #d91717;
+    transition: 0.7s;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+.contact_input input{
+    width: 35%;
+    margin-left: 180px;
+    border-radius: 5px;
+    height: 45px;
+}
+
+.contact_input{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 80px;
+    width: 950px;
+}
+
+textarea{
+    width: 35%;
+    margin-left: 180px;
+    border-radius: 5px;
+    border: 2px solid;
+    height: 100px;
+}
+
+textarea::placeholder {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 12%;
+    height: 40px;
+    background-color: rgb(154, 152, 150);
+    color: #b40d0d;
+    margin-left: 300px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+button:hover{
+    color: white;
+    background-color: #540d0d;
+}
+
+.finish_container{
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  font-size: 25px;
+  margin-left: 880px;
+  text-align: center;
+  margin-top: -450px;
+}
+
+.icon{
+    display: flex;
+   gap: 15px;
+   font-size: 20px;
+   margin-left: 240px;
+}
+
+footer{
+    margin-top: 350px;
+}
