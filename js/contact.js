@@ -77,7 +77,7 @@ contact.addEventListener("click", () => {
     contactP.innerHTML = "The number must start with '+994'!"
     contactP.style.display = "block"
    }
-  } else if (emailinput != true){
+  } else if (emailinput != true) {
    if (change.innerText == "Dili Dəyişdirin") {
     contactP.innerHTML = "Emailin sonu 'com' ile bitmelidir!"
     contactP.style.display = "block"
@@ -159,6 +159,11 @@ i18next
      headerVacancies: "Vakansiya",
      headerContact: "Əlaqə",
      headerChange: "Dili Dəyişdirin",
+     contact: "Əlaqə",
+     button: "Sorğu göndərmək",
+     CONTACTDETAILS: "Əlaqə məlumatları",
+     email: "E-poçt: sweetcakes@gmail.com",
+     phone: "Telefon : +994 55 551 60 02",
      footerContact: "Əlaqə",
      footerAbout: "Haqqinda",
      footerVacancies: "Vakansiya",
@@ -176,6 +181,11 @@ i18next
      headerVacancies: "Vacancies",
      headerContact: "Contact",
      headerChange: "Change Language",
+     contact: "contact",
+     button: "Send Request",
+     CONTACTDETAILS: "Contact Details",
+     email: "E-mail: sweetcakes@gmail.com",
+     phone: "Phone : +994 55 551 60 02",
      footerContact: "Contact",
      footerAbout: "About",
      footerVacancies: "Vacancies",
@@ -203,6 +213,11 @@ function updateContent() {
  document.querySelector('[data-i18n="headerVacancies"]').textContent = i18next.t('headerVacancies');
  document.querySelector('[data-i18n="headerContact"]').textContent = i18next.t('headerContact');
  document.querySelector('[data-i18n="headerChange"]').textContent = i18next.t('headerChange');
+ document.querySelector('[data-i18n="contact"]').textContent = i18next.t('contact');
+ document.querySelector('[data-i18n="button"]').textContent = i18next.t('button');
+ document.querySelector('[data-i18n="email"]').textContent = i18next.t('email');
+ document.querySelector('[data-i18n="phone"]').textContent = i18next.t('phone');
+ document.querySelector('[data-i18n="CONTACTDETAILS"]').textContent = i18next.t('CONTACTDETAILS');
  document.querySelector('[data-i18n="footerContact"]').textContent = i18next.t('footerContact');
  document.querySelector('[data-i18n="footerAbout"]').textContent = i18next.t('footerAbout');
  document.querySelector('[data-i18n="footerVacancies"]').textContent = i18next.t('footerVacancies');
