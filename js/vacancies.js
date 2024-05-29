@@ -7,7 +7,7 @@ let footer = document.querySelector('footer');
 let decoratorOne = document.querySelector(".decoratorOne");
 let flag = true;
 let snowNumber = 150;
-// =========================================== Variables ==============================
+// =========================================== Variables ===============================
 
 
 // =========================================== Search =================================
@@ -111,7 +111,7 @@ i18next
      headerContact: "Əlaqə",
      headerChange: "Dili Dəyişdirin",
      VacanciesMain: "Vakansiyalar",
-     SearceButton: "axtar",
+     SearceButton: "Axtar",
      CakeDecorator: "Tort Dekoratoru",
      CakeDecoratorTitle: "İş növü: 'Full - time', Tort Dekoratoru müxtəlif hallar üçün xüsusi tortlarin dizayni, bəzədilməsi və hazirlanmasina cavabdeh olan yaradici və bacariqli peşəkardir. Bu rol bədii qabiliyyət, təfərrüata diqqət və çörək bişirmə üsullarini dərindən başa düşməyi tələb edir. Əmək haqqi: həftəlik 30$ , Ətraflı məlumat üçün əlaqə nömrəsi: +994 55 551 60 03",
      Production: "İstehsalat qrupunun üzvü",

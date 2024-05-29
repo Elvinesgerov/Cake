@@ -57,8 +57,8 @@ function createSnow() {
     div.classList.add('snow');
     div.innerHTML = '❆';
     div.style.left = `${Math.random() * 90}vw`;
-    div.style.animationDuration = `${50}s`;
-    div.style.fontSize = `${1.2}em`;
+    div.style.animationDuration = `${70}s`;
+    div.style.fontSize = `${1.4}em`;
     div.style.color = "red";
     snow.appendChild(div);
     div.addEventListener('animationend', () => {
