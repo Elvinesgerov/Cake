@@ -4,8 +4,8 @@
 
 /* ============================================ Began WebSite ==================================== */
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -86,7 +86,7 @@ body {
 
 @keyframes animation {
     to {
-        transform: translateY(250vh);
+        transform: translateY(150vh);
     }
 
 }
@@ -157,14 +157,14 @@ body {
 
 
 /* ============================================ Main CSS ========================================== */
-h1{
+h1 {
     display: flex;
     justify-content: center;
     margin-top: 60px;
     font-size: 50px;
 }
 
-.contact_input input{
+.contact_input input {
     width: 35%;
     margin-left: 180px;
     border-radius: 5px;
@@ -172,7 +172,7 @@ h1{
     padding: 10px;
 }
 
-.contact_input{
+.contact_input {
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -180,7 +180,7 @@ h1{
     width: 950px;
 }
 
-.contact_input p{
+.contact_input p {
     margin-left: 200px;
     font-size: 27px;
     color: green;
@@ -188,7 +188,7 @@ h1{
     display: none;
 }
 
-textarea{
+textarea {
     width: 35%;
     margin-left: 180px;
     border-radius: 5px;
@@ -201,10 +201,9 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     text-align: center;
-    
 }
 
-button{
+button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,31 +212,30 @@ button{
     height: 40px;
     background-color: rgb(154, 152, 150);
     color: #b40d0d;
-    margin-left: 300px;
-    margin-top: 10px;
+    margin: 10px 300px;
     font-size: 15px;
 }
 
-button:hover{
+button:hover {
     color: white;
     background-color: #540d0d;
 }
 
-.finish_container{
-  display: flex;
-  gap: 25px;
-  flex-direction: column;
-  font-size: 25px;
-  margin-left: 880px;
-  text-align: center;
-  margin-top: -450px;
+.finish_container {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    font-size: 25px;
+    margin-left: 880px;
+    text-align: center;
+    margin-top: -450px;
 }
 
-.icon{
+.icon {
     display: flex;
-   gap: 15px;
-   font-size: 20px;
-   margin-left: 240px;
+    gap: 15px;
+    font-size: 20px;
+    margin-left: 240px;
 }
 
 .icon a {
@@ -247,9 +245,10 @@ button:hover{
     transition: 0.5s;
 }
 
-.icon a:hover{
+.icon a:hover {
     color: blue;
 }
+
 /* ============================================ Main CSS ========================================== */
 
 /* ============================================ Footer CSS ======================================== */
@@ -264,8 +263,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 25px;
-    margin-left: 50px;
-    margin-top: 70px;
+    margin: 70px 50px;
 }
 
 .sheet_icon a {
@@ -281,8 +279,7 @@ footer {
     font-family: Dancing Script, cursive;
     font-style: italic;
     font-size: 20px;
-    margin-left: 240px;
-    margin-top: 60px;
+    margin: 60px 240px;
     width: 10%;
     transition: 0.7s;
 }

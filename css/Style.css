@@ -53,7 +53,8 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 20px 35px 20px 25px;
     border-radius: 12px;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     top: 25px;
     right: 35px;
     width: 350px;
@@ -66,6 +67,7 @@ body {
 .toast .toast-content {
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 .toast-content .check {
@@ -266,8 +268,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    padding-left: 110px;
-    padding-top: 70px;
+    padding: 70px 110px;
     font-size: 25px;
     background-color: rgb(243, 234, 223);
     width: 400px;
@@ -297,6 +298,10 @@ body {
     justify-content: space-around;
     font-family: Dancing Script, cursive;
     font-style: italic;
+}
+
+.sweet_container h2{
+    font-size: 35px;
 }
 
 hr {
@@ -374,7 +379,6 @@ hr {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-
 }
 
 .guest_container div p {
@@ -402,7 +406,7 @@ hr {
     margin-top: 200px;
 }
 
-.guest_container h1 {
+.guest_container h2 {
     font-weight: 900;
     color: rgb(25, 25, 120);
     font-size: 40px;
@@ -415,10 +419,10 @@ hr {
     font-style: italic;
     justify-content: center;
     color: rgb(223, 135, 71);
-    font-size: 50px;
+    font-size: 57px;
 }
 
-.header_guest {
+.cake__header {
     border: 1.5px solid rgb(218, 113, 131);
     border-radius: 10px;
     width: 90%;
@@ -431,7 +435,7 @@ hr {
     background-color: rgb(240, 235, 235);
 }
 
-.header_guest h2 {
+.cake__header h2 {
     margin-top: 12px;
     font-size: 40px;
     font-family: italic;
@@ -470,8 +474,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 25px;
-    margin-left: 50px;
-    margin-top: 70px;
+    margin: 70px 50px;
 }
 
 .sheet_icon a {
@@ -487,8 +490,7 @@ footer {
     font-family: Dancing Script, cursive;
     font-style: italic;
     font-size: 20px;
-    margin-left: 240px;
-    margin-top: 60px;
+    margin: 30px 240px;
     width: 10%;
     transition: 0.7s;
 }
@@ -515,7 +517,7 @@ footer {
 }
 
 .footer_sheet {
-    margin-top: -260px;
+    margin-top: -355px;
 }
 
 .sheet_footer p {
@@ -534,9 +536,8 @@ footer {
 .ri-mail-fill {
     display: flex;
     color: rgb(237, 192, 134);
-    margin-left: 550px;
     font-size: 20px;
-    margin-top: -43px;
+    margin: -43px 550px;
 }
 
 .sheet_icon {
@@ -545,7 +546,7 @@ footer {
     color: rgb(128, 78, 16);
     font-size: 30px;
     gap: 125px;
-    margin-top: 20px;
+    margin-top: 140px;
     transition: 0.7s;
 }
 

@@ -4,8 +4,8 @@
 
 /* ============================================ Began WebSite ==================================== */
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -186,6 +186,7 @@ body {
 .zero_about p:hover {
     color: rgb(193, 68, 109);
 }
+
 /* ============================================ Main CSS ========================================== */
 
 
@@ -200,8 +201,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 25px;
-    margin-left: 50px;
-    margin-top: 70px;
+    margin: 70px 50px;
 }
 
 .sheet_icon a {
@@ -217,8 +217,7 @@ footer {
     font-family: Dancing Script, cursive;
     font-style: italic;
     font-size: 20px;
-    margin-left: 240px;
-    margin-top: 60px;
+    margin: 60px 240px;
     width: 10%;
     transition: 0.7s;
 }

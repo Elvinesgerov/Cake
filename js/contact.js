@@ -6,10 +6,10 @@ let iconA = document.querySelectorAll(".icon a");
 let contact = document.querySelector(".contact_input button");
 let contactP = document.querySelector(".contact_input p");
 let contactInput = document.querySelectorAll(".contact_input input");
-let numberinput = document.querySelectorAll(".numberinput");
-let emailinput = document.querySelectorAll(".emailinput");
-let contactTextarea = document.querySelectorAll(".contact_input textarea");
-let change = document.querySelector(".change")
+let numberinput = document.querySelector(".numberinput");
+let emailinput = document.querySelector(".emailinput");
+let contactTextarea = document.querySelector(".contact_input textarea");
+let change = document.querySelector(".change");
 let body = document.querySelector('body');
 let footer = document.querySelector('footer');
 let flag = true;
@@ -22,7 +22,7 @@ function createSnow() {
  div.classList.add('snow');
  div.innerHTML = '❆';
  div.style.left = `${Math.random() * 90}vw`;
- div.style.animationDuration = `${50}s`;
+ div.style.animationDuration = `${15}s`;
  div.style.fontSize = `${1.2}em`;
  div.style.color = "red";
  snow.appendChild(div);
@@ -40,58 +40,51 @@ for (let i = 0; i < snowNumber; i++) {
 
 // =========================================== Contact JS =============================
 contact.addEventListener("click", () => {
- let email = emailinput.value.endsWith("com");
- let number = numberinput.value.startsWith("+994");
+ let email = emailinput.value.trim().endsWith("com");
+ let numberstart = numberinput.value.trim().startsWith("+994");
+
  contactInput.forEach(item => {
-  if (item.value != "" && contactTextarea != "" && numberinput.length >= 13 && email == true && number == true) {
-   if (change.innerHTML == "Change Languge") {
-    contactP.innerHTML = "Information Sent"
-    contactP.style.display = "block"
-    item.value = ""
-    contactTextarea.value = ""
+  if (item.value.trim() != "" && contactTextarea.value.trim() != "" && numberinput.value.trim().length >= 13 && email && numberstart) {
+   if (change.innerHTML == "Change Language") {
+    contactP.innerHTML = "Information Sent";
+    contactP.style.display = "block";
+    item.value = "";
+    contactTextarea.value = "";
    } else if (change.innerHTML == "Dili Dəyişdirin") {
-    contactP.innerHTML = "Məlumat Göndərilib"
-    contactP.style.display = "block"
+    contactP.innerHTML = "Məlumat Göndərilib";
+    contactP.style.display = "block";
    }
-  } else if (item.value == "" || contactTextarea == "") {
+  } else if (item.value.trim() == "" || contactTextarea.value.trim() == "") {
    if (change.innerText == "Dili Dəyişdirin") {
-    contactP.innerHTML = "Her bir alani doldurun!"
-    contactP.style.display = "block"
+    contactP.innerHTML = "Her bir alani doldurun!";
+    contactP.style.display = "block";
    } else if (change.innerHTML == "Change Language") {
-    contactP.innerHTML = "Fill in every field!"
-    contactP.style.display = "block"
+    contactP.innerHTML = "Fill in every field!";
+    contactP.style.display = "block";
    }
-  } else if (numberinput.length < 7) {
+  } else if (numberinput.value.trim().length < 13) {
    if (change.innerText == "Dili Dəyişdirin") {
-    contactP.innerHTML = "Nömre minimum 13 reqemli olmalidir"
-    contactP.style.display = "block"
+    contactP.innerHTML = "Nömre minimum 13 reqemli olmalidir";
+    contactP.style.display = "block";
    } else if (change.innerHTML == "Change Language") {
-    contactP.innerHTML = "The number must be at least 13 digits long"
-    contactP.style.display = "block"
+    contactP.innerHTML = "The number must be at least 13 digits long";
+    contactP.style.display = "block";
    }
-  } else if (number != true) {
+  } else if (!numberstart) {
+   contactP.innerHTML = "Nömrə '+994' ile baslamalıdır";
+   contactP.style.display = "block";
+  } else if (!email) {
    if (change.innerText == "Dili Dəyişdirin") {
-    contactP.innerHTML = "Nömre '+994' ile baslamalidir!"
-    contactP.style.display = "block"
+    contactP.innerHTML = "Emailin sonu 'com' ile bitmelidir!";
+    contactP.style.display = "block";
    } else if (change.innerHTML == "Change Language") {
-    contactP.innerHTML = "The number must start with '+994'!"
-    contactP.style.display = "block"
-   }
-  } else if (emailinput != true) {
-   if (change.innerText == "Dili Dəyişdirin") {
-    contactP.innerHTML = "Emailin sonu 'com' ile bitmelidir!"
-    contactP.style.display = "block"
-   } else if (change.innerHTML == "Change Language") {
-    contactP.innerHTML = "Email must end with 'com'!"
-    contactP.style.display = "block"
+    contactP.innerHTML = "Email must end with 'com'!";
+    contactP.style.display = "block";
    }
   }
- })
-})
+ });
+});
 // =========================================== Contact JS =============================
-
-
-
 
 // =========================================== DarkMood JS ============================
 darkMood.addEventListener('click', () => {
