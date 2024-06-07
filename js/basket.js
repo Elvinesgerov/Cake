@@ -1,25 +1,30 @@
+// =========================================== Variables ==============================
 let main = document.querySelector("main");
 let mainH1 = document.querySelector("main h1");
 let body = document.querySelector("body");
-let basket = JSON.parse(localStorage.getItem("basket")) || [];
 let total = document.createElement("div");
-let snow = document.querySelector('#snow')
+let snow = document.querySelector('#snow');
 let darkMood = document.querySelector('.darkmood');
 let headerContainer = document.querySelector('.header_container')
+let basket = JSON.parse(localStorage.getItem("basket")) || [];
 let totalAmount = 0;
 let flag = true;
 let snowNumber = 80;
+// =========================================== Variables ==============================
 
+
+
+// =========================================== Basket Js ==============================
 total.classList.add("total");
 body.appendChild(total);
 
 function updateTotal() {
  total.innerHTML = `Total: ${totalAmount} Azn`;
-}
+};
 
 function updateLocalStorage() {
  localStorage.setItem("basket", JSON.stringify(basket));
-}
+};
 
 basket.forEach((pruduct, index) => {
  let containerDiv = document.createElement("div");
@@ -82,18 +87,21 @@ basket.forEach((pruduct, index) => {
 
 updateTotal();
 updateLocalStorage();
+// =========================================== Basket Js ==============================
 
 
+
+// =========================================== Snow Js ================================
 function createSnow() {
  let div = document.createElement('div');
  div.classList.add('snow');
  div.innerHTML = '❆';
  div.style.left = `${Math.random() * 90}vw`
- div.style.animationDuration = `${10}s`
+ div.style.animationDuration = `${15}s`
  div.style.fontSize = `${1.2}em`
  div.style.color = "red";
 
- snow.appendChild(div)
+ snow.appendChild(div);
  div.addEventListener('animationend', () => {
   div.remove();
   createSnow();
@@ -103,29 +111,35 @@ function createSnow() {
 for (let i = 0; i < snowNumber; i++) {
  setTimeout(createSnow, i * 200);
 }
+// =========================================== Snow Js ================================
 
+
+// =========================================== DarkMood Js ============================
 darkMood.addEventListener('click', () => {
  if (flag == true) {
   darkMood.style.backgroundColor = "black";
-  darkMood.style.color = "white"
-  darkMood.style.boxShadow = "10px 5px 5px brown"
-  headerContainer.style.backgroundColor = "black"
-  body.style.backgroundColor = "rgb(35, 35, 35)"
-  main.style.color = "white"
-  body.style.color = "white"
-  flag = false
+  darkMood.style.color = "white";
+  darkMood.style.boxShadow = "10px 5px 5px brown";
+  headerContainer.style.backgroundColor = "black";
+  body.style.backgroundColor = "rgb(35, 35, 35)";
+  main.style.color = "white";
+  body.style.color = "white";
+  flag = false;
  } else if (flag == false) {
-  darkMood.style.backgroundColor = "white"
-  darkMood.style.color = "black"
-  darkMood.style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset"
-  headerContainer.style.backgroundColor = "#540d0d"
-  body.style.backgroundColor = "white"
-  body.style.color = "black"
-  main.style.color = "black"
-  flag = true
+  darkMood.style.backgroundColor = "white";
+  darkMood.style.color = "black";
+  darkMood.style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset";
+  headerContainer.style.backgroundColor = "#540d0d";
+  body.style.backgroundColor = "white";
+  body.style.color = "black";
+  main.style.color = "black";
+  flag = true;
  }
 })
+// =========================================== DarkMood Js ============================
 
+
+// =========================================== Scroll Js ==============================
 window.onscroll = function () {
  let goToTopButton = document.querySelector('#goToTopButton');
 
@@ -144,3 +158,7 @@ function goToTop() {
   setTimeout(goToTop, 10);
  }
 }
+// =========================================== Scroll Js ==============================
+
+
+// console.log(localStorage.clear());

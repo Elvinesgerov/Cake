@@ -59,7 +59,7 @@ darkMood.addEventListener('click', () => {
   darkMood.style.boxShadow = "10px 5px 5px brown";
   headerContainer.style.backgroundColor = "black";
   body.style.backgroundColor = "rgb(35, 35, 35)";
-  body.style.color = "white"
+  body.style.color = "white";
   footer.style.backgroundColor = "rgb(38, 38, 38)";
   flag = false;
  } else if (flag == false) {

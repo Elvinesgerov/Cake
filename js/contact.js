@@ -22,7 +22,7 @@ function createSnow() {
  div.classList.add('snow');
  div.innerHTML = '❆';
  div.style.left = `${Math.random() * 90}vw`;
- div.style.animationDuration = `${15}s`;
+ div.style.animationDuration = `${20}s`;
  div.style.fontSize = `${1.2}em`;
  div.style.color = "red";
  snow.appendChild(div);
@@ -86,6 +86,7 @@ contact.addEventListener("click", () => {
 });
 // =========================================== Contact JS =============================
 
+
 // =========================================== DarkMood JS ============================
 darkMood.addEventListener('click', () => {
  if (flag == true) {
@@ -94,18 +95,18 @@ darkMood.addEventListener('click', () => {
   darkMood.style.boxShadow = "10px 5px 5px brown";
   headerContainer.style.backgroundColor = "black";
   iconA.forEach(item => {
-   item.style.color = "white"
+   item.style.color = "white";
   })
   body.style.backgroundColor = "rgb(35, 35, 35)";
-  body.style.color = "white"
+  body.style.color = "white";
   footer.style.backgroundColor = "rgb(38, 38, 38)";
   flag = false;
  } else if (flag == false) {
   darkMood.style.backgroundColor = "white";
   darkMood.style.color = "black";
-  body.style.color = "black"
+  body.style.color = "black";
   iconA.forEach(item => {
-   item.style.color = "black"
+   item.style.color = "black";
   })
   darkMood.style.boxShadow = "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset";
   headerContainer.style.backgroundColor = "#540d0d";
@@ -174,7 +175,7 @@ i18next
      headerVacancies: "Vacancies",
      headerContact: "Contact",
      headerChange: "Change Language",
-     contact: "contact",
+     contact: "Contact Us",
      button: "Send Request",
      CONTACTDETAILS: "Contact Details",
      email: "E-mail: sweetcakes@gmail.com",

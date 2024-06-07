@@ -4,9 +4,9 @@ let darkMood = document.querySelector('.darkmood');
 let headerContainer = document.querySelector('.header_container');
 let sectionContainer = document.querySelector('.section_container');
 let body = document.querySelector('body');
-let sweetContainer = document.querySelector('.sweet_container h1');
+let sweetContainer = document.querySelector('.sweet_container h2');
 let sweetMain = document.querySelectorAll('.sweet_main div');
-let guestContainerOut = document.querySelector('.guest_container_out h1');
+let guestContainerOut = document.querySelector('.guest_container_out h2');
 let guestContainerOutP = document.querySelector('.guest_container_out p');
 let footer = document.querySelector('footer');
 let zeroContainerImg = document.querySelector('.zero_container img');
@@ -102,7 +102,7 @@ darkMood.addEventListener('click', () => {
         sweetContainer.style.color = "black";
         sweetMain.forEach(item => {
             item.style.color = 'black';
-        })
+        });
         guestContainerOut.style.color = "black";
         guestContainerOutP.style.color = "black";
         footer.style.backgroundColor = "black";

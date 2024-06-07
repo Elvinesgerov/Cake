@@ -2,7 +2,7 @@
 let snow = document.querySelector('#snow');
 let darkMood = document.querySelector('.darkmood');
 let headerContainer = document.querySelector('.header_container');
-let zeroAboutDivP = document.querySelectorAll(".zero_about div p")
+let zeroAboutDivP = document.querySelectorAll(".zero_about div p");
 let body = document.querySelector('body');
 let footer = document.querySelector('footer');
 let flag = true;
@@ -41,8 +41,8 @@ darkMood.addEventListener('click', () => {
   headerContainer.style.backgroundColor = "black";
   body.style.backgroundColor = "rgb(35, 35, 35)";
   zeroAboutDivP.forEach(item => {
-   item.style.color = "rgb(193, 68, 109)"
-  })
+   item.style.color = "rgb(193, 68, 109)";
+  });
   footer.style.backgroundColor = "rgb(38, 38, 38)";
   flag = false;
  } else if (flag == false) {
@@ -53,8 +53,8 @@ darkMood.addEventListener('click', () => {
   body.style.backgroundColor = "white";
   footer.style.backgroundColor = "black";
   zeroAboutDivP.forEach(item => {
-   item.style.color = "black"
-  })
+   item.style.color = "black";
+  });
   flag = true;
  };
 });
@@ -69,7 +69,7 @@ window.onscroll = function () {
   goToTopButton.style.display = 'flex';
  } else {
   goToTopButton.style.display = 'none';
- }
+ };
 };
 
 function goToTop() {
